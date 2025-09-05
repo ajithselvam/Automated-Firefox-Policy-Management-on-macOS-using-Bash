@@ -27,6 +27,36 @@ After validation, the script restores the default settings.
 
 ---
 
+2. Make the script executable:
+   chmod +x firefox_policies.sh
+
+3. Run the script:
+   ./firefox.sh
+
+📂 Script Workflow
+
+Check for Firefox installation.
+
+Create distribution/policies.json with clear-on-shutdown enabled.
+
+Open and close Firefox to enforce the policy.
+
+Overwrite policies.json with default values (clear-on-shutdown disabled).
+
+Reopen Firefox with restored settings.
+
+⚠️ Notes
+
+This script is macOS-specific (/Applications/Firefox.app path).
+
+Requires sudo if run from a non-admin account (for chown root:wheel).
+
+📜 License
+
+This project is licensed under the MIT License.
+
+
+
 ## 🚀 Usage
 1. Clone the repository:
    ```bash
